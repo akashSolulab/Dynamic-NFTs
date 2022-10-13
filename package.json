@@ -1,0 +1,22 @@
+{
+  "name": "dynamic-nfts",
+  "version": "1.0.0",
+  "description": "Non-fungible token that can change based on certain circumstances",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashSolulab/Dynamic-NFTs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashSolulab/Dynamic-NFTs/issues"
+  },
+  "homepage": "https://github.com/akashSolulab/Dynamic-NFTs#readme",
+  "dependencies": {
+    "hardhat": "^2.12.0"
+  }
+}
