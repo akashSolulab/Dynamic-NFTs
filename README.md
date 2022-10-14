@@ -62,7 +62,7 @@ npx hardhat compile
 #### Smart contract Deployment
   
 ```bash
-npx hardhat run --network goerli scripts/deploy-mech-token.js
+npx hardhat run --network goerli scripts/deploy-BullAndBear.js
 ```
 
 #### Smart contract Verfication

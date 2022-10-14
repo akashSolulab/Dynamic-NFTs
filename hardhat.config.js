@@ -1,3 +1,6 @@
+require('@nomiclabs/hardhat-waffle')
+require("dotenv").config();
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
@@ -14,10 +17,10 @@ module.exports = {
     //   url: process.env.ALCHEMY_RPC_URL,
     //   accounts: [process.env.SIGNER_PRIV_KEY],
     // },
-    // goerli: {
-    //   url: process.env.ALCHEMY_RPC_URL,
-    //   accounts: [process.env.SIGNER_PRIV_KEY],
-    // },
+    goerli: {
+      url: process.env.ALCHEMY_GOERLI_URL,
+      accounts: [process.env.SIGNER_PRIV_KEY],
+    },
     // localhost: {
     //   url: "http://127.0.0.1:8545",
     // },
@@ -25,11 +28,11 @@ module.exports = {
   mocha: {
     timeout: 21000000,
   },
-  // etherscan: {
-  //   apiKey: {
-  //     goerli: process.env.ETHERSCAN_API_KEY,
-  //     polygonMumbai: process.env.POLYGONSCAN_API_KEY,
-  //   },
-  // },
-  // plugins: ["solidity-coverage"],
+  etherscan: {
+    apiKey: {
+      goerli: process.env.ETHERSCAN_API_KEY,
+      polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+    },
+  },
+  plugins: ["solidity-coverage"],
 };
