@@ -52,6 +52,7 @@ contract BullBear is ERC721, ERC721Enumerable, ERC721URIStorage, KeeperCompatibl
     // For testing with the mock on Rinkeby, pass in 10(seconds) for `updateInterval` and the address of my 
     // deployed  MockPriceFeed.sol contract (0xD753A1c190091368EaC67bbF3Ee5bAEd265aC420).
     // BTC/USD on goerli: 0xA39434A63A52E749F02807ae27335515BA4b07F7
+    
     constructor(uint updateInterval, address _pricefeed) ERC721("Bull&Bear", "BBTK") {
         // Set the keeper update interval
         interval = updateInterval; 
